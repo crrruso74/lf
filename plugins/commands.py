@@ -19,7 +19,7 @@ async def start_message(c,m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 🤖", url=f'https://t.me/MX_Networks')
+                        InlineKeyboardButton("🤖 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 🤖", url=f'https://t.me/{UPDATE_CHANNEL')
                     ]
                 ]
             )
