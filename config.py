@@ -4,7 +4,7 @@ API_ID = os.environ.get('API_ID')
 API_HASH = os.environ.get('API_HASH')
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 OWNER_ID = int(os.environ.get("OWNER_ID"))
-ADMINS = list(int(i) for i in os.environ.get("ADMINS", "").split(" ")) if os.environ.get("ADMINS") else []
+ADMINS = list(int(i) for i in os.environ.get("ADMINS", " ").split(" ")) if os.environ.get("ADMINS") else []
 if OWNER_ID not in ADMINS:
     ADMINS.append(OWNER_ID)
 MONGODB = os.environ.get('MONGODB')
